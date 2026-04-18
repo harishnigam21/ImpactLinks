@@ -22,7 +22,6 @@ app.use("/api/auth", Auth);
 app.get("/", (req, res) =>
   res.status(200).json({ message: "Backend Server running successfully" }),
 );
-server.listen(PORT, () =>
+app.listen(PORT, () =>
   console.log(`Backend Server is running at PORT No.-->> ${PORT}`),
 );
-export default server;
